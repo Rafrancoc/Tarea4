@@ -1,0 +1,29 @@
+bd : bd_tareas
+create table `tb_account` (
+    `id` INT (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `username` TEXT (50) NOT NULL,
+    `password` TEXT(255) NOT NULL,
+    `email` TEXT(100) 
+)
+
+INSERT INTO `tb_account`(`id`, `username`, `password`, `email`) VALUES ('rfranco','1234abcd..','rafrancoc@ube.edu.ec')
+
+create table `tb_usuarios` 
+( 
+`nombre` TEXT (50) NOT NULL, 
+`apellidos` TEXT(100) NOT NULL, 
+`correo` TEXT(100), 
+`usuario` TEXT(50) NOT NULL, 
+`clave` TEXT(50) NOT NULL, 
+`telefono` TEXT(10) 
+);
+
+INSERT INTO `tb_usuarios`(`nombre`, `apellidos`, `correo`, `usuario`, `clave`, `telefono`) VALUES ('Rebeca','Franco Cobeña','rafrancoc@ube.edu.ec','rfranco','1234abcd..','0959119890')
+
+create table `tb_tareas`
+(
+`id` INT (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`decripcion` TEXT(200) NOT NULL,
+`usuario` TEXT(50) NOT NULL, 
+`estado` TEXT(1)
+)

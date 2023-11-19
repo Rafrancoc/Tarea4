@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section{
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #ffc107;
+        }
+        input{
+            width: 70%;
+            padding: 10px;
+        }
+        button{
+            width: 20%;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: none;
+            cursor: pointer;
+            background-color: #000;
+            color: aliceblue;
+        }
+        ul{
+            text-align: left;
+        }
+        ul li{
+            border-bottom: 1px dashed #333;
+        }
+        span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: firebrick;
+            text-align: center;
+            color: #fff;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        span:hover{
+            background-color: darkred;
+        }
+    </style>
+    <section>
+        <h1>Listado de tareas</h1>
+        <input type="text" id="tarea">
+        <button id="agregar">Agregar</button>
+
+        <h3>Tareas: <span id="cantidad">0</span></h3>
+        <ul id="listado">
+
+        </ul>
+        <a href="index.html">
+            <button class="boton">Regresar</button>
+        </a>
+    </section>
+    <script src="js/script6.js"></script>
+</body>
+</html>
